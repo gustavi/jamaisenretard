@@ -1,0 +1,46 @@
+Agence de voyage
+Gérer des réservations
+Payées ou non
+
+
+BDD
+
+Réservations
+    - UID
+    - client
+    - réservations de vols
+    - réservations d'hotels
+    - Est confirmée
+
+Réservations de vols
+    - UID
+    - numéro
+    - date départ
+    - date arrivée
+    - lieu départ
+    - lieu arrivé
+    - prix
+    - Est confirmé
+
+Réservations d'hotels
+    - UID
+    - Nom
+    - Lieu
+    - Date de départ
+    - Date de fin
+    - Prix
+    - Est confirmé
+
+Compte Client
+    - UID
+    - Nom
+    - Prénom
+    - courriel
+    - téléphone
+    - personnes
+
+Personne
+    - UID
+    - Nom
+    - Prénom
+    - Age
