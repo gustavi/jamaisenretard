@@ -9,6 +9,7 @@ class Person(models.Model):
     first_name = models.CharField(max_length=100)
     birthday = models.DateField()
 
+
 class ClientAccount(models.Model):
     """
     Compte d'une personne physique
@@ -18,6 +19,7 @@ class ClientAccount(models.Model):
     email = models.EmailField()
     phone = models.CharField(max_length=100)
     persons = models.ForeignKey(Person, on_delete=models.PROTECT)
+
 
 class HotelBooking(models.Model):
     """
@@ -30,6 +32,7 @@ class HotelBooking(models.Model):
     price = models.FloatField()
     is_confirmed = models.BooleanField()
 
+
 class FlyBooking(models.Model):
     """
     Modèle de réservation des vols
@@ -41,6 +44,7 @@ class FlyBooking(models.Model):
     arrival_place = models.CharField(max_length=100)
     price = models.FloatField()
     is_confirmed = models.BooleanField()
+
 
 class Booking(models.Model):
     """
