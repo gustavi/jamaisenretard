@@ -1,0 +1,362 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Augustin Laville et Marc Lambertz">
+    <title>Jamais En Retard - API</title>
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'css/freelancer.min.css' %}" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Jamais En Retard - API</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Base de données</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Explorer l'API</a>
+            </li>
+            <li class="nav-item mx-0 mx-lg-1">
+              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">À propos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <img class="img-fluid mb-5 d-block mx-auto" src="{% static 'img/profile.png' %}" alt="">
+        <h1 class="text-uppercase mb-0">Jamais En Retard</h1>
+        <hr class="star-light">
+        <h2 class="font-weight-light mb-0">Documentation de l'API</h2>
+      </div>
+    </header>
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">Base de données</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/user.png' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/tourist.png' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/family.png' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/plane-ticket.png' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/hotel.png' %}" alt="">
+            </a>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
+              <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                  <i class="fas fa-search-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio/airplane.png' %}" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-primary text-white mb-0" id="about">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-white">Explorer l'API</h2>
+        <hr class="star-light mb-5">
+        <div class="row">
+          <div class="col-lg-4 ml-auto">
+            <p class="lead">Il est possible d'explorer l'API via une version en ligne. Les identifiants à utiliser sont ceux fournis.</p>
+          </div>
+          <div class="col-lg-4 mr-auto">
+            <p class="lead">Vous pouvez également vous informer avec la documentation de l'API.</p>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a class="btn btn-xl btn-outline-light" href="/api/v1/">
+            <i class="fas fa-search mr-2"></i>
+            Explorer l'API
+          </a>
+          <a class="btn btn-xl btn-outline-light" href="/api/doc/v1/">
+            <i class="fas fa-book mr-2"></i>
+            Documentation
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center text-uppercase text-secondary mb-0">À propos</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p>Ce projet a été réalisé pendant le séminaire <strong>Les technologies web : tendances et évolutions</strong> à l'Efrei Paris.</p>
+            <p>Nous avons utilisé le <em>framework</em> <strong>Django</strong> en <strong>Python</strong>.</p>
+            <p>Cette page utilise <strong>Bootstrap 4</strong> et les icones proviennent principalement de <strong>Flaticon</strong> sous licence CC 3.0.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-lg-0">
+            <h4 class="text-uppercase mb-4">Marc Lambert</h4>
+          </div>
+          <div class="col-md-6">
+            <h4 class="text-uppercase mb-4">Augustin Laville</h4>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-to-top d-lg-none position-fixed ">
+      <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+    </div>
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-1">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Utilisateurs, groupes et permissions</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="{% static 'img/portfolio/user.png' %}" alt="">
+              <p class="mb-5">Nous utilisons 3 modèles dans notre base de données pour gérer les connexions des utilisateurs : <strong>User</strong>, <strong>Group</strong> et <strong>Permission</strong>. Ces modèles sont inclus dans <code>django.contrib.auth</code> c'est pourquoi nous les utilisons par défaut. Les permissions permettent de gérer différents niveaux d'accès à une même donnée, nous ne les utilisons pas sur ce projet. Les utilisateurs sont représentés en base de données par le modèle User. Chaque utilisateurs peut-être (ou non) dans un ou plusieurs groupes et chaque groupe peut acceuillir plusieurs utilisateurs. Les permissions sont associées à un utilisateur ou un groupe, la priorité étant sur celles de l'utilisateur.</p>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Fermer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-2">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Comptes client</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="{% static 'img/portfolio/tourist.png' %}" alt="">
+              <p class="mb-5">Un <strong>compte client</strong> représente le compte pour une personne ou une famille, un client.</p>
+              <hr>
+              <h5 class="text-center pb-3">Code du modèle</h5>
+              <pre class="text-left">
+class ClientAccount(models.Model):
+    """
+    Compte d'une personne physique.
+    """
+    last_name = models.CharField('Nom de famille', max_length=100)
+    first_name = models.CharField('Prénom', max_length=100)
+    email = models.EmailField('Courriel')
+    phone = models.CharField('Numéro de téléphone', max_length=100)
+              </pre>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Fermer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-3">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Personne physique</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="{% static 'img/portfolio/family.png' %}" alt="">
+              <p class="mb-5">Une <strong>Personne physique</strong> représente une personne qui va participer au voyage. Elle est ratachée à un compte client. Cela sert principalement pour les réservations d'avions et d'hotel mais également pour les tarifs.</p>
+              <hr>
+              <h5 class="text-center pb-3">Code du modèle</h5>
+              <pre class="text-left">
+class Person(models.Model):
+    """
+    Personne physique lors d'un voyage.
+    """
+    last_name = models.CharField('Nom de famille', max_length=100)
+    first_name = models.CharField('Prénom', max_length=100)
+    birthday = models.DateField('Date de naissance')
+    client_account = models.ForeignKey(ClientAccount, verbose_name='Compte client lié', on_delete=models.CASCADE)
+              </pre>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Fermer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-4">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Réservation</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="{% static 'img/portfolio/plane-ticket.png' %}" alt="">
+              <p class="mb-5">Le modèle représente une réservation pour un voyage. Il est lié à plusieurs reservation d'hotels et plusieurs réservations d'avions.</p>
+              <hr>
+              <h5 class="text-center pb-3">Code du modèle</h5>
+              <pre class="text-left">
+class Booking(models.Model):
+    """
+    Modèle pour gérer les réservations.
+    """
+    client_account = models.ForeignKey(ClientAccount, verbose_name='Compte client lié', on_delete=models.PROTECT)
+    is_confirmed = models.BooleanField('Est confirmée')
+              </pre>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Fermer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-5">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Réservation d'hotel</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="{% static 'img/portfolio/hotel.png' %}" alt="">
+              <p class="mb-5">Le modèle représente une réservation pour un hotel. Il est lié  à une réservation. </p>
+              <hr>
+              <h5 class="text-center pb-3">Code du modèle</h5>
+              <pre class="text-left">
+class HotelBooking(models.Model):
+    """
+    Modèle de réservation d'hotels
+    """
+    booking = models.ForeignKey(Booking, verbose_name='Réservation liée', on_delete=models.CASCADE)
+    name = models.CharField('Nom de l\'hotel', max_length=100)
+    place = models.CharField('Lieu', max_length=100)
+    arrival_date = models.DateTimeField('Date d\'arrivée')
+    departure_date = models.DateTimeField('Date de départ')
+    price = models.FloatField('Prix')
+    is_confirmed = models.BooleanField('Est confirmée')
+              </pre>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Fermer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-modal mfp-hide" id="portfolio-modal-6">
+      <div class="portfolio-modal-dialog bg-white">
+        <a class="close-button d-none d-md-block portfolio-modal-dismiss" href="#">
+          <i class="fa fa-3x fa-times"></i>
+        </a>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h2 class="text-secondary text-uppercase mb-0">Réservation d'avion</h2>
+              <hr class="star-dark mb-5">
+              <img class="img-fluid mb-5" src="{% static 'img/portfolio/airplane.png' %}" alt="">
+              <p class="mb-5">Le modèle représente une réservation pour un avion. Il est lié  à une réservation.</p>
+                            <hr>
+              <h5 class="text-center pb-3">Code du modèle</h5>
+              <pre class="text-left">
+class FlyBooking(models.Model):
+    """
+    Modèle de réservation des vols
+    """
+    booking = models.ForeignKey(Booking, verbose_name='Réservation liée', on_delete=models.CASCADE)
+    number = models.CharField('Numéro du vol', max_length=50)
+    departure_date = models.DateTimeField('Date de départ')
+    arrival_date = models.DateTimeField('Date d\'arrivée')
+    departure_place = models.CharField('Lieu de départ', max_length=100)
+    arrival_place = models.CharField('Lieu d\'arrivée', max_length=100)
+    price = models.FloatField('Prix')
+    is_confirmed = models.BooleanField('Est confirmée')
+              </pre>
+              <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
+                <i class="fa fa-close"></i>
+                Fermer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+    <script src="{% static 'js/contact_me.js' %}"></script>
+    <script src="{% static 'js/freelancer.min.js' %}"></script>
+  </body>
+</html>

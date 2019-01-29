@@ -17,17 +17,31 @@ from django.contrib import admin
 from django.urls import include, path
 
 from rest_framework import routers
+from rest_framework_swagger.views import get_swagger_view
 
+from jamaisenretard.booking.views import PersonViewSet, ClientAccountViewSet, HotelBookingViewSet, FlyBookingViewSet, \
+    BookingViewSet, IndexView
 from jamaisenretard.member.views import UserViewSet, GroupViewSet
 
 
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
+router.register(r'persons', PersonViewSet)
+router.register(r'client-accounts', ClientAccountViewSet)
+router.register(r'hotel-bookings', HotelBookingViewSet)
+router.register(r'fly-bookings', FlyBookingViewSet)
+router.register(r'bookings', BookingViewSet)
+
+
+schema_view = get_swagger_view(title='JamaisEnRetard API')
 
 
 urlpatterns = [
-    path('', include(router.urls)),
+    path('', IndexView.as_view(), name='home'),
+
+    path('api/v1/', include(router.urls)),
+    path('api/doc/v1/', schema_view),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 
     path('admin/', admin.site.urls),
